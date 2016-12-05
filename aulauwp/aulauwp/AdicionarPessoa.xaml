@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="aulauwp.AdicionarPessoa"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:aulauwp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton x:Name="adicionarButton" Icon="Add" 
+                          Label="Adicionar" Click="adicionarButton_Click"/>
+            <AppBarButton x:Name="cancelarButton" Icon="Cancel" 
+                          Label="Cancelar" Click="cancelarButton_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+            <TextBox x:Name="pessoaNomeTextBox" PlaceholderText="Nome" 
+                     Margin="20"/>
+            <TextBox x:Name="pessoaSobreNomeTextBox" 
+                     PlaceholderText="Sobrenome" Margin="20,0,20,0"/>
+        </StackPanel>
+    </Grid>
+</Page>
